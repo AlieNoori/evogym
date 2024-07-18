@@ -1,6 +1,4 @@
-# React + TypeScript + Vite
-
-## Evogym build with vanilla ReactTS
+## Evogym build with vanilla React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

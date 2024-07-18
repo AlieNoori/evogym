@@ -5,14 +5,21 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 type Props = {
   children: ReactNode;
   setSelectedPage: (value: SelectedPage) => void;
+  to: SelectedPage;
+  type?: 'action' | 'regular';
 };
 
-function ActionButton({ children, setSelectedPage }: Props) {
+function ActionButton({
+  type = 'action',
+  to,
+  children,
+  setSelectedPage,
+}: Props) {
   return (
     <AnchorLink
-      className="bg-secondary-500 hover:bg-primary-500 rounded-md px-10 py-2 hover:text-white"
-      onClick={() => setSelectedPage('contactus')}
-      href="#contactus"
+      className={`${type === 'action' ? 'rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white' : 'text-sm font-bold text-primary-500 underline hover:text-secondary-500'} `}
+      onClick={() => setSelectedPage(to)}
+      href={`#${to}`}
     >
       {children}
     </AnchorLink>
