@@ -1,6 +1,6 @@
 import useMediaQuery from '@/hooks/useMediaQuery';
 import ActionButton from '@/shared/ActionButton';
-import { SelectedPage } from '@/shared/types';
+import { SetSelectedPageType } from '@/shared/types';
 import HomePageText from '@/assets/HomePageText.png';
 import HomePageGraphic from '@/assets/HomePageGraphic.png';
 import SponsorRedBull from '@/assets/SponsorRedBull.png';
@@ -9,7 +9,7 @@ import SponsorFortune from '@/assets/SponsorFortune.png';
 import { motion } from 'framer-motion';
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: SetSelectedPageType;
 };
 
 function Home({ setSelectedPage }: Props) {

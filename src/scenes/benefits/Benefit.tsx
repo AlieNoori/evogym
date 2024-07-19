@@ -1,5 +1,5 @@
 import ActionButton from '@/shared/ActionButton';
-import { BenefitType, SelectedPage } from '@/shared/types';
+import { BenefitType, SetSelectedPageType } from '@/shared/types';
 import { motion, type Variants } from 'framer-motion';
 
 const childVariant: Variants = {
@@ -8,7 +8,7 @@ const childVariant: Variants = {
 };
 
 interface Props extends BenefitType {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: SetSelectedPageType;
 }
 
 function Benefit({ icon, title, setSelectedPage, description }: Props) {

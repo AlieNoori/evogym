@@ -1,14 +1,14 @@
+import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png';
+import ActionButton from '@/shared/ActionButton';
 import Header from '@/shared/Header';
-import { BenefitType, SelectedPage } from '@/shared/types';
+import { BenefitType, SetSelectedPageType } from '@/shared/types';
 import {
+  AcademicCapIcon,
   HomeModernIcon,
   UserGroupIcon,
-  AcademicCapIcon,
 } from '@heroicons/react/24/solid';
 import { motion, type Variants } from 'framer-motion';
 import Benefit from './Benefit';
-import ActionButton from '@/shared/ActionButton';
-import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png';
 
 const benefits: BenefitType[] = [
   {
@@ -39,7 +39,7 @@ const container: Variants = {
 };
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: SetSelectedPageType;
 };
 
 function Benefits({ setSelectedPage }: Props) {

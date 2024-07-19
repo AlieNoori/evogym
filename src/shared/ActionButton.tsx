@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
-import { SelectedPage } from './types';
+import { SelectedPage, SetSelectedPageType } from './types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 type Props = {
   children: ReactNode;
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: SetSelectedPageType;
   to: SelectedPage;
   type?: 'action' | 'regular';
 };
