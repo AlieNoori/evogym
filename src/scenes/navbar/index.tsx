@@ -24,6 +24,10 @@ function Navbar({ selectedPage, setSelectedPage, isTopOfPage }: Props) {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
   const flexBetween = 'flex items-center justify-between';
 
+  function handleClickMenuModal() {
+    setIsMenuToggled((toggled) => !toggled);
+  }
+
   return (
     <nav>
       <div
@@ -96,6 +100,7 @@ function Navbar({ selectedPage, setSelectedPage, isTopOfPage }: Props) {
                   page={navItem.page}
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onClick={handleClickMenuModal}
                 />
               </li>
             ))}
