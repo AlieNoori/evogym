@@ -1,30 +1,25 @@
-## Evogym build with vanilla React
+## Evogym project
+A Company website for an imaginary gym
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built with with React integrated with TypeScript
 
-Currently, two official plugins are available:
+## Tech stack
+- Vanilla React
+- TypeScript
+- TailWindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+1. First Clone the reop: 
+```git clone https://github.com/AlieNoori/evogym.git```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navigate to the project directory:
+```cd evogym```
 
-- Configure the top-level `parserOptions` property like this:
+3. Install dependencies:
+```npm install```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+4. Run dev server:
+```npm run dev```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### You alos can visit the result on the https://evogym-9mf.pages.dev/
