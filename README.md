@@ -1,5 +1,5 @@
 ## Evogym project
-A Company website for an imaginary gym
+Company website for an imaginary gym
 
 Built with with React integrated with TypeScript
 
